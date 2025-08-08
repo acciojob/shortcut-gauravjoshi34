@@ -1,13 +1,15 @@
 function shortcut(s1, s2) {
-  // your code here
-	if(!str){
-		return ''
-	}
+  // Return empty string if either input is empty
+  if (!s1 || !s2) {
+    return '';
+  }
 
-	return console.log(str1[0]+str2[0]);
+  // Return first character of each string, case preserved
+  return s1[0] + s2[0];
 }
 
 // Do not change the code below.
 const s1 = prompt("Enter s1:");
 const s2 = prompt("Enter s2:");
-alert(shortcut(s1, s2));
+const result = shortcut(s1, s2);  // Store the returned value
+alert(result); 
